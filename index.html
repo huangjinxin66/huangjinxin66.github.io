@@ -172,9 +172,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="大小端的含义"><a href="#大小端的含义" class="headerlink" title="大小端的含义"></a>大小端的含义</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">大端指的是低地址存放高字节，而数据的低字节保存在内存的高地址中。这样的存储模式有点类似于把数据当作字符串顺序处理：地址由小向大增加，而数据从高位往低位放；这和我们的阅读习惯一致。</span><br><span class="line">小端模式，是指数据的高字节保存在内存的高地址中，而数据的低字节保存在内存的低地址中，</span><br><span class="line">这种存储模式将地址的高低和数据位权有效地结合起来，高地址部分权值高，低地址部分权值低。</span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="大小端的用法"><a href="#大小端的用法" class="headerlink" title="大小端的用法"></a>大小端的用法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">一般网络字节用的是大端，主机字节序根据计算机来看，有的用大端、有的用小端。</span><br></pre></td></tr></table></figure>
+        <h2 id="大小端的含义"><a href="#大小端的含义" class="headerlink" title="大小端的含义"></a>大小端的含义</h2><blockquote>
+</blockquote>
+<p>大端指的是低地址存放高字节，而数据的低字节保存在内存的高地址中。这样的存储模式有点类似于把数据当作字符串顺序处理：地址由小向大增加，而数据从高位往低位放；这和我们的阅读习惯一致。<br>小端模式，是指数据的高字节保存在内存的高地址中，而数据的低字节保存在内存的低地址中，</p>
+<h2 id="这种存储模式将地址的高低和数据位权有效地结合起来，高地址部分权值高，低地址部分权值低。"><a href="#这种存储模式将地址的高低和数据位权有效地结合起来，高地址部分权值高，低地址部分权值低。" class="headerlink" title="这种存储模式将地址的高低和数据位权有效地结合起来，高地址部分权值高，低地址部分权值低。"></a>这种存储模式将地址的高低和数据位权有效地结合起来，高地址部分权值高，低地址部分权值低。</h2><h2 id="大小端的用法"><a href="#大小端的用法" class="headerlink" title="大小端的用法"></a>大小端的用法</h2><blockquote>
+</blockquote>
+<p>一般网络字节用的是大端，主机字节序根据计算机来看，有的用大端、有的用小端。</p>
 
       
 
