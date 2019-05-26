@@ -152,6 +152,69 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-ipv6自动获取" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/26/ipv6自动获取/">ipv6自动获取</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/26/ipv6自动获取/" class="archive-article-date">
+  	<time datetime="2019-05-26T03:06:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>ipv6自动获取总共有三种模式：1、无状态自动获取；2、dhcpv6有状态自动获取；3、dhcpv6无状态自动获取。<br>无状态自动获取是通过路由公告获取无状态ip，无状态ip后64位和电脑的本地链路地址后64位一样，是基于电脑的48位mac地址生成的。前64位网络前缀是通过路由公告获取的。无状态自动获取只能获取到ip地址。<br>dhcpv6有状态自动获取是指dhcpv6服务器指定ipv6的地址池，分配给设备ipv6地址。此外，dhcpv6服务器还能分配dns。至于网关，目前dhcpv6服务器基本不支持分配网关。如果硬要获取网关，只能获取发生路由公告的服务器的本地链路地址。windows电脑在dhcpv6环境下显示的网关都是服务器的本地链路地址。<br>dhcpv6无状态自动获取是指服务器不用指定ipv6的地址池。设备获取的ipv6地址就是无状态的地址，基于mac和路由公告获取到的网络前缀生成的。此外，可以通过dhcpv6服务器分配dns等配置。这种模式下，设备可以获取到ip和dns等网络配置。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/26/ipv6自动获取/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-linux-大小端的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
