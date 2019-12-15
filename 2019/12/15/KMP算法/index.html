@@ -8,14 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>KMP算法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="kmp算法是改进的字符串匹配算法。当我们想知道字符串a在字符串b第一次出现的位置时，最笨的办法就是暴力遍历。 暴力遍历查找字符串出现的位置暴力遍历很容易理解，外面用个for循环遍历a的每个字符。里面用for循环遍历b的每个字符，和a的字符串进行匹配比较。不匹配就结束里面的循环。外面a继续查下一个字符，b又重头来和a进行匹配。举个例子，比如外面是用a的第i个字符，那么里面就需要比较a的第i个字符和b">
+<meta property="og:type" content="article">
 <meta property="og:title" content="KMP算法">
 <meta property="og:url" content="http://yoursite.com/2019/12/15/KMP算法/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="kmp算法是改进的字符串匹配算法。当我们想知道字符串a在字符串b第一次出现的位置时，最笨的办法就是暴力遍历。 暴力遍历查找字符串出现的位置暴力遍历很容易理解，外面用个for循环遍历a的每个字符。里面用for循环遍历b的每个字符，和a的字符串进行匹配比较。不匹配就结束里面的循环。外面a继续查下一个字符，b又重头来和a进行匹配。举个例子，比如外面是用a的第i个字符，那么里面就需要比较a的第i个字符和b">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-12-15T02:03:11.394Z">
+<meta property="og:updated_time" content="2019-12-15T03:01:10.092Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="KMP算法">
+<meta name="twitter:description" content="kmp算法是改进的字符串匹配算法。当我们想知道字符串a在字符串b第一次出现的位置时，最笨的办法就是暴力遍历。 暴力遍历查找字符串出现的位置暴力遍历很容易理解，外面用个for循环遍历a的每个字符。里面用for循环遍历b的每个字符，和a的字符串进行匹配比较。不匹配就结束里面的循环。外面a继续查下一个字符，b又重头来和a进行匹配。举个例子，比如外面是用a的第i个字符，那么里面就需要比较a的第i个字符和b">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -171,7 +174,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>kmp算法是改进的字符串匹配算法。当我们想知道字符串a在字符串b第一次出现的位置时，最笨的办法就是暴力遍历。</p>
+<h2 id="暴力遍历查找字符串出现的位置"><a href="#暴力遍历查找字符串出现的位置" class="headerlink" title="暴力遍历查找字符串出现的位置"></a>暴力遍历查找字符串出现的位置</h2><p>暴力遍历很容易理解，外面用个for循环遍历a的每个字符。里面用for循环遍历b的每个字符，和a的字符串进行匹配比较。不匹配就结束里面的循环。<br>外面a继续查下一个字符，b又重头来和a进行匹配。<br>举个例子，比如外面是用a的第i个字符，那么里面就需要比较a的第i个字符和b的第0个字符是否相等，a的第i+1个字符是否和b的第1个字符一样。如果出现不一样，就说明不匹配，退出里面的循环。匹配到了就继续匹配，直到匹配完b。</p>
+<h2 id="暴力遍历的时间复杂度"><a href="#暴力遍历的时间复杂度" class="headerlink" title="暴力遍历的时间复杂度"></a>暴力遍历的时间复杂度</h2><p>a的字符串长度是m，b的字符串长度是n。查找b在a第一次出现的位置，时间复杂度是m*n。</p>
+<h2 id="KMP算法查找字符串出现的位置"><a href="#KMP算法查找字符串出现的位置" class="headerlink" title="KMP算法查找字符串出现的位置"></a>KMP算法查找字符串出现的位置</h2><p>匹配字符串时，当匹配到a的前n个字符和b的前n个字符一样，n+1个字符不一样时。如果前n个字符的前缀和后缀一样的最大长度是k的话，a中第n+1个字符的前面k个字符和b的前k个字符是完全一样的。那么a完全可以从第n+1个字符开始，b从第k+1个字符开始，a和b的每个字符开始匹配，直到把b匹配完了。</p>
+<h2 id="KMP算法的实现"><a href="#KMP算法的实现" class="headerlink" title="KMP算法的实现"></a>KMP算法的实现</h2><p>kmp算法需要一个数组记录b的子串（子串第一个字符都是原字符串的第一个字符）前缀和后缀一样的最大长度。这样，a从第1个字符开始和b匹配，直到发生了匹配不到的情况。假设有n个字符匹配到了，就需要去找b前面n个字符的子串前缀和后缀一样的最大长度k。这样b直接从k+1开始，a继续从当前位置开始和b进行匹配。</p>
+<p>记录一个字符串子串的前缀和后缀一样的最大长度。需要一个for循环，统计每一个子串的前缀和后缀一样的最大长度。统计i的结果是k。那么统计i+1，如果b的第i+1个元素等于第k+1个元素，表示前k+1和后k+1个元素是完全一样的。那么i+1的统计就是k+1。如果不一样，就需要找到k的前缀和后缀一样的最大长度l。然后比较第l+1个元素和i+1个元素是否一样，一样i+1的统计结果就是l+1。不一样继续递归从数组里找l的统计结果。直到结果为0或者找到了匹配为止。</p>
+<h2 id="KMP算法的时间复杂度"><a href="#KMP算法的时间复杂度" class="headerlink" title="KMP算法的时间复杂度"></a>KMP算法的时间复杂度</h2><p>a的字符串长度是m，b的字符串长度是n。统计数组时复杂度是n，匹配a时复杂度时m，总的时间复杂度是m+n。</p>
+
       
 
       
