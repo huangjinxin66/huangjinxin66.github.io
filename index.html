@@ -152,6 +152,72 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-n数之和" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/15/n数之和/">n数之和</a>
+    </h1>
+  
+
+        
+        <a href="/2019/12/15/n数之和/" class="archive-article-date">
+  	<time datetime="2019-12-15T08:12:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。"><a href="#一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。" class="headerlink" title="一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。"></a>一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。</h2><p>逐个去求1个数的和等于固定值、2个数的和等于固定值…n个数的和等于固定值的组合情况。</p>
+<h2 id="首先要把数组排好序"><a href="#首先要把数组排好序" class="headerlink" title="首先要把数组排好序"></a>首先要把数组排好序</h2><h2 id="求1个数的和等于固定值"><a href="#求1个数的和等于固定值" class="headerlink" title="求1个数的和等于固定值"></a>求1个数的和等于固定值</h2><p>遍历数组，找到哪个数等于指定的值的情况。效率高的话可以在有序数组里面二分查找。找到了，周围可能有和它相等的数，要往左右两个方向找所有和它一样的值，值不一样或者遍历完了数组就退出循环。</p>
+<h2 id="求两个数的值等于固定值"><a href="#求两个数的值等于固定值" class="headerlink" title="求两个数的值等于固定值"></a>求两个数的值等于固定值</h2><p>有序数组求和有个规律，用两个指针，指针m指向第一个元素，指针n指向最后一个元素。如果两个指针的和小于目标值，就把m往右移，这样两个指针的和会变大。如果两个指针的和大于目标值，即把n往左移，这样和会减少。和等于目标值，需要把m往右移，移到值和m的值不一样的地方。把n往左移，移到值和n的值不一样的地方。然后继续，知道m和n的指针移到一起退出循环。</p>
+<h2 id="求n个数的值等于固定值"><a href="#求n个数的值等于固定值" class="headerlink" title="求n个数的值等于固定值"></a>求n个数的值等于固定值</h2><p>这个可以转化为2个数的和。第一个到n-2个看成一种情况，求n-1个数到结束中两个数的和等于（固定值减去前n-2个数的和）<br>然后第二个到n-1个数看成一种情况，从第n个数到结束找和等于固定值的所有情况。<br>以此类推，直到另一边只有两个数可以比较的时候，比较完了退出循环。<br>其中求到了第一个到n-2个数的和sum后，第2个到n-1个数的和可以sum减去第一个和加上第n-1个数。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/12/15/n数之和/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-KMP算法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

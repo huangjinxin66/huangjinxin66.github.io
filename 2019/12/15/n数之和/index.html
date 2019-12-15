@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/12 | Hexo</title>
+  <title>n数之和 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/12/index.html">
+  <meta name="description" content="一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。逐个去求1个数的和等于固定值、2个数的和等于固定值…n个数的和等于固定值的组合情况。 首先要把数组排好序求1个数的和等于固定值遍历数组，找到哪个数等于指定的值的情况。效率高的话可以在有序数组里面二分查找。找到了，周围可能有和它相等的数，要往左右两个方向找所有和它一样的值，值不一样或者遍历完了数组就退出循环。 求两个数的值等于固定值有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="n数之和">
+<meta property="og:url" content="http://yoursite.com/2019/12/15/n数之和/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。逐个去求1个数的和等于固定值、2个数的和等于固定值…n个数的和等于固定值的组合情况。 首先要把数组排好序求1个数的和等于固定值遍历数组，找到哪个数等于指定的值的情况。效率高的话可以在有序数组里面二分查找。找到了，周围可能有和它相等的数，要往左右两个方向找所有和它一样的值，值不一样或者遍历完了数组就退出循环。 求两个数的值等于固定值有">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-15T08:36:22.183Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="n数之和">
+<meta name="twitter:description" content="一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。逐个去求1个数的和等于固定值、2个数的和等于固定值…n个数的和等于固定值的组合情况。 首先要把数组排好序求1个数的和等于固定值遍历数组，找到哪个数等于指定的值的情况。效率高的话可以在有序数组里面二分查找。找到了，周围可能有和它相等的数，要往左右两个方向找所有和它一样的值，值不一样或者遍历完了数组就退出循环。 求两个数的值等于固定值有">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,76 +154,159 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-n数之和" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      n数之和
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/15/n数之和/" class="archive-article-date">
+
+        
+        <a href="/2019/12/15/n数之和/" class="archive-article-date">
   	<time datetime="2019-12-15T08:12:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-15</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/15/n数之和/">n数之和</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。"><a href="#一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。" class="headerlink" title="一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。"></a>一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。</h2><p>逐个去求1个数的和等于固定值、2个数的和等于固定值…n个数的和等于固定值的组合情况。</p>
+<h2 id="首先要把数组排好序"><a href="#首先要把数组排好序" class="headerlink" title="首先要把数组排好序"></a>首先要把数组排好序</h2><h2 id="求1个数的和等于固定值"><a href="#求1个数的和等于固定值" class="headerlink" title="求1个数的和等于固定值"></a>求1个数的和等于固定值</h2><p>遍历数组，找到哪个数等于指定的值的情况。效率高的话可以在有序数组里面二分查找。找到了，周围可能有和它相等的数，要往左右两个方向找所有和它一样的值，值不一样或者遍历完了数组就退出循环。</p>
+<h2 id="求两个数的值等于固定值"><a href="#求两个数的值等于固定值" class="headerlink" title="求两个数的值等于固定值"></a>求两个数的值等于固定值</h2><p>有序数组求和有个规律，用两个指针，指针m指向第一个元素，指针n指向最后一个元素。如果两个指针的和小于目标值，就把m往右移，这样两个指针的和会变大。如果两个指针的和大于目标值，即把n往左移，这样和会减少。和等于目标值，需要把m往右移，移到值和m的值不一样的地方。把n往左移，移到值和n的值不一样的地方。然后继续，知道m和n的指针移到一起退出循环。</p>
+<h2 id="求n个数的值等于固定值"><a href="#求n个数的值等于固定值" class="headerlink" title="求n个数的值等于固定值"></a>求n个数的值等于固定值</h2><p>这个可以转化为2个数的和。第一个到n-2个看成一种情况，求n-1个数到结束中两个数的和等于（固定值减去前n-2个数的和）<br>然后第二个到n-1个数看成一种情况，从第n个数到结束找和等于固定值的所有情况。<br>以此类推，直到另一边只有两个数可以比较的时候，比较完了退出循环。<br>其中求到了第一个到n-2个数的和sum后，第2个到n-1个数的和可以sum减去第一个和加上第n-1个数。</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/15/n数之和/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/15/KMP算法/" class="archive-article-date">
-  	<time datetime="2019-12-15T02:03:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-15</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/12/15/KMP算法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">KMP算法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/15/KMP算法/">KMP算法</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -242,8 +329,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
