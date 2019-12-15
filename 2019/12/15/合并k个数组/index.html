@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>合并k个有序数组 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="##合并k个有序数组合并k个有序数组，需要把每个数组的第一个元素作比较，找出最小的元素。把它弄出来放进结果数组里面。然后把最小的元素移出来后，那个数组的第一个元素指针也要往后移一位。 求k个元素的最小值，最好的办法是用堆排序。堆的根结点是最小的值，满足每个节点的值都小于它的孩子。堆第n个元素的左叶子节点是第2n个元素，右叶子节点是第2n+1个元素。每次排完序，把根节点去掉。再加一个新的元素到已经有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="合并k个有序数组">
+<meta property="og:url" content="http://yoursite.com/2019/12/15/合并k个数组/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="##合并k个有序数组合并k个有序数组，需要把每个数组的第一个元素作比较，找出最小的元素。把它弄出来放进结果数组里面。然后把最小的元素移出来后，那个数组的第一个元素指针也要往后移一位。 求k个元素的最小值，最好的办法是用堆排序。堆的根结点是最小的值，满足每个节点的值都小于它的孩子。堆第n个元素的左叶子节点是第2n个元素，右叶子节点是第2n+1个元素。每次排完序，把根节点去掉。再加一个新的元素到已经有">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-15T08:53:12.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="合并k个有序数组">
+<meta name="twitter:description" content="##合并k个有序数组合并k个有序数组，需要把每个数组的第一个元素作比较，找出最小的元素。把它弄出来放进结果数组里面。然后把最小的元素移出来后，那个数组的第一个元素指针也要往后移一位。 求k个元素的最小值，最好的办法是用堆排序。堆的根结点是最小的值，满足每个节点的值都小于它的孩子。堆第n个元素的左叶子节点是第2n个元素，右叶子节点是第2n+1个元素。每次排完序，把根节点去掉。再加一个新的元素到已经有">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,16 +154,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-合并k个数组" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-合并k个数组" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/15/合并k个数组/">合并k个有序数组</a>
+    <h1 class="article-title" itemprop="name">
+      合并k个有序数组
     </h1>
   
 
@@ -179,6 +181,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -186,16 +209,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/15/合并k个数组/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/15/合并k个数组/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/12/15/n数之和/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">n数之和</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -215,347 +297,14 @@
 
 
 
-
   
-    <article id="post-n数之和" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/15/n数之和/">n数之和</a>
-    </h1>
   
 
-        
-        <a href="/2019/12/15/n数之和/" class="archive-article-date">
-  	<time datetime="2019-12-15T08:12:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。"><a href="#一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。" class="headerlink" title="一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。"></a>一个数组里面，若干个数的和等于一个固定值，求这些数的所有组合情况。</h2><p>逐个去求1个数的和等于固定值、2个数的和等于固定值…n个数的和等于固定值的组合情况。</p>
-<h2 id="首先要把数组排好序"><a href="#首先要把数组排好序" class="headerlink" title="首先要把数组排好序"></a>首先要把数组排好序</h2><h2 id="求1个数的和等于固定值"><a href="#求1个数的和等于固定值" class="headerlink" title="求1个数的和等于固定值"></a>求1个数的和等于固定值</h2><p>遍历数组，找到哪个数等于指定的值的情况。效率高的话可以在有序数组里面二分查找。找到了，周围可能有和它相等的数，要往左右两个方向找所有和它一样的值，值不一样或者遍历完了数组就退出循环。</p>
-<h2 id="求两个数的值等于固定值"><a href="#求两个数的值等于固定值" class="headerlink" title="求两个数的值等于固定值"></a>求两个数的值等于固定值</h2><p>有序数组求和有个规律，用两个指针，指针m指向第一个元素，指针n指向最后一个元素。如果两个指针的和小于目标值，就把m往右移，这样两个指针的和会变大。如果两个指针的和大于目标值，即把n往左移，这样和会减少。和等于目标值，需要把m往右移，移到值和m的值不一样的地方。把n往左移，移到值和n的值不一样的地方。然后继续，知道m和n的指针移到一起退出循环。</p>
-<h2 id="求n个数的值等于固定值"><a href="#求n个数的值等于固定值" class="headerlink" title="求n个数的值等于固定值"></a>求n个数的值等于固定值</h2><p>这个可以转化为2个数的和。第一个到n-2个看成一种情况，求n-1个数到结束中两个数的和等于（固定值减去前n-2个数的和）<br>然后第二个到n-1个数看成一种情况，从第n个数到结束找和等于固定值的所有情况。<br>以此类推，直到另一边只有两个数可以比较的时候，比较完了退出循环。<br>其中求到了第一个到n-2个数的和sum后，第2个到n-1个数的和可以sum减去第一个和加上第n-1个数。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/15/n数之和/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-KMP算法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/15/KMP算法/">KMP算法</a>
-    </h1>
   
 
-        
-        <a href="/2019/12/15/KMP算法/" class="archive-article-date">
-  	<time datetime="2019-12-15T02:03:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>kmp算法是改进的字符串匹配算法。当我们想知道字符串a在字符串b第一次出现的位置时，最笨的办法就是暴力遍历。</p>
-<h2 id="暴力遍历查找字符串出现的位置"><a href="#暴力遍历查找字符串出现的位置" class="headerlink" title="暴力遍历查找字符串出现的位置"></a>暴力遍历查找字符串出现的位置</h2><p>暴力遍历很容易理解，外面用个for循环遍历a的每个字符。里面用for循环遍历b的每个字符，和a的字符串进行匹配比较。不匹配就结束里面的循环。<br>外面a继续查下一个字符，b又重头来和a进行匹配。<br>举个例子，比如外面是用a的第i个字符，那么里面就需要比较a的第i个字符和b的第0个字符是否相等，a的第i+1个字符是否和b的第1个字符一样。如果出现不一样，就说明不匹配，退出里面的循环。匹配到了就继续匹配，直到匹配完b。</p>
-<h2 id="暴力遍历的时间复杂度"><a href="#暴力遍历的时间复杂度" class="headerlink" title="暴力遍历的时间复杂度"></a>暴力遍历的时间复杂度</h2><p>a的字符串长度是m，b的字符串长度是n。查找b在a第一次出现的位置，时间复杂度是m*n。</p>
-<h2 id="KMP算法查找字符串出现的位置"><a href="#KMP算法查找字符串出现的位置" class="headerlink" title="KMP算法查找字符串出现的位置"></a>KMP算法查找字符串出现的位置</h2><p>匹配字符串时，当匹配到a的前n个字符和b的前n个字符一样，n+1个字符不一样时。如果前n个字符的前缀和后缀一样的最大长度是k的话，a中第n+1个字符的前面k个字符和b的前k个字符是完全一样的。那么a完全可以从第n+1个字符开始，b从第k+1个字符开始，a和b的每个字符开始匹配，直到把b匹配完了。</p>
-<h2 id="KMP算法的实现"><a href="#KMP算法的实现" class="headerlink" title="KMP算法的实现"></a>KMP算法的实现</h2><p>kmp算法需要一个数组记录b的子串（子串第一个字符都是原字符串的第一个字符）前缀和后缀一样的最大长度。这样，a从第1个字符开始和b匹配，直到发生了匹配不到的情况。假设有n个字符匹配到了，就需要去找b前面n个字符的子串前缀和后缀一样的最大长度k。这样b直接从k+1开始，a继续从当前位置开始和b进行匹配。</p>
-<p>记录一个字符串子串的前缀和后缀一样的最大长度。需要一个for循环，统计每一个子串的前缀和后缀一样的最大长度。统计i的结果是k。那么统计i+1，如果b的第i+1个元素等于第k+1个元素，表示前k+1和后k+1个元素是完全一样的。那么i+1的统计就是k+1。如果不一样，就需要找到k的前缀和后缀一样的最大长度l。然后比较第l+1个元素和i+1个元素是否一样，一样i+1的统计结果就是l+1。不一样继续递归从数组里找l的统计结果。直到结果为0或者找到了匹配为止。</p>
-<h2 id="KMP算法的时间复杂度"><a href="#KMP算法的时间复杂度" class="headerlink" title="KMP算法的时间复杂度"></a>KMP算法的时间复杂度</h2><p>a的字符串长度是m，b的字符串长度是n。统计数组时复杂度是n，匹配a时复杂度时m，总的时间复杂度是m+n。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/15/KMP算法/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-ipv6自动获取" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/26/ipv6自动获取/">ipv6自动获取</a>
-    </h1>
   
 
-        
-        <a href="/2019/05/26/ipv6自动获取/" class="archive-article-date">
-  	<time datetime="2019-05-26T03:06:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>ipv6自动获取总共有三种模式：1、无状态自动获取；2、dhcpv6有状态自动获取；3、dhcpv6无状态自动获取。<br>无状态自动获取是通过路由公告获取无状态ip，无状态ip后64位和电脑的本地链路地址后64位一样，是基于电脑的48位mac地址生成的。前64位网络前缀是通过路由公告获取的。无状态自动获取只能获取到ip地址。<br>dhcpv6有状态自动获取是指dhcpv6服务器指定ipv6的地址池，分配给设备ipv6地址。此外，dhcpv6服务器还能分配dns。至于网关，目前dhcpv6服务器基本不支持分配网关。如果硬要获取网关，只能获取发生路由公告的服务器的本地链路地址。windows电脑在dhcpv6环境下显示的网关都是服务器的本地链路地址。<br>dhcpv6无状态自动获取是指服务器不用指定ipv6的地址池。设备获取的ipv6地址就是无状态的地址，基于mac和路由公告获取到的网络前缀生成的。此外，可以通过dhcpv6服务器分配dns等配置。这种模式下，设备可以获取到ip和dns等网络配置。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/26/ipv6自动获取/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-linux-大小端的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/19/linux-大小端的区别/">linux 大小端的区别</a>
-    </h1>
-  
-
-        
-        <a href="/2019/05/19/linux-大小端的区别/" class="archive-article-date">
-  	<time datetime="2019-05-19T10:39:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="大小端的含义"><a href="#大小端的含义" class="headerlink" title="大小端的含义"></a>大小端的含义</h2><ul>
-<li>大端指的是低地址存放高字节，而数据的低字节保存在内存的高地址中。这样的存储模式有点类似于把数据当作字符串顺序处理：地址由小向大增加，而数据从高位往低位放；这和我们的阅读习惯一致。</li>
-<li>小端模式，是指数据的高字节保存在内存的高地址中，而数据的低字节保存在内存的低地址中。<br>这种存储模式将地址的高低和数据位权有效地结合起来，高地址部分权值高，低地址部分权值低。</li>
-</ul>
-<hr>
-<h2 id="大小端的用法"><a href="#大小端的用法" class="headerlink" title="大小端的用法"></a>大小端的用法</h2><ul>
-<li>一般网络字节用的是大端，主机字节序根据计算机来看，有的用大端、有的用小端。</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/19/linux-大小端的区别/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/19/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2019/05/19/hello-world/" class="archive-article-date">
-  	<time datetime="2019-05-19T04:59:17.581Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/19/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -578,8 +327,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
